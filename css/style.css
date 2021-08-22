@@ -1,0 +1,51 @@
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Heebo Font */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    background-color: rgb(199, 211, 241);
+    border: 2px solid black;
+    width: 18rem;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    padding: 2rem;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+}
+
+#weather-condition{
+    margin: 3rem;
+    height: 10rem;
+    /* border: 1px solid red; */
+}
+
+.info{
+    font-family: 'Roboto', sans-serif;
+}
+.info .location{
+    font-family: 'Heebo', sans-serif;
+}
+
+.info #date{
+    color: rgb(49, 49, 49);
+    font-size: 0.rem;
+}
+
+.info .temp{
+    font-family: 'Heebo', sans-serif;
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+.info .tempMinMax{
+    color: rgb(49, 49, 49);
+}

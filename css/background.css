@@ -1,0 +1,61 @@
+.wave{
+    margin-top: 14rem;
+    z-index: -1;
+    margin-left: -20rem;
+    width: 55rem;
+    height: 55rem;
+    border-radius: 25rem;
+    opacity: 0.5;
+    position: absolute;
+   
+}
+.-one{
+    background-color: rgb(185, 224, 255);
+    animation: Wave_One 15s infinite ease-in alternate both;
+}
+.-two{
+    background-color: rgb(75, 130, 175);
+    animation: Wave_Two 15s infinite ease-in-out alternate both;
+}
+.-three{
+    background-color: rgb(141, 204, 255);
+    animation: Wave_Three 5s infinite ease-in-out alternate both;
+}
+
+@keyframes Wave_One {
+    from {
+       transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+@keyframes Wave_Two {
+    from {
+       transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes Wave_Three {
+    from {
+       transform: rotate(60deg);
+    }
+    to{
+        transform: rotate(-60deg);
+    }
+}
+
+#weather-condition img{
+    animation: resizing 1s ease-in-out infinite alternate both;
+}
+
+@keyframes resizing {
+    from {
+        width: 4rem;
+    }
+    to{
+        width: 5rem;
+    }
+}

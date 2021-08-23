@@ -9,12 +9,43 @@
     padding: 0;
 }
 
+.searchBox{
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid black; */
+    width: 23rem;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#text-area {
+    margin-left: 1rem;
+    width: 16rem;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+#search{
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2rem;
+    border: hidden;
+    background-color: green;
+    color: white;
+    width: 5rem;
+    font-size: 1rem;
+    height: 2rem;
+}
+
+#search:hover{
+    cursor: pointer;
+}
+
 .box{
     background-color: rgb(199, 211, 241);
     border: 2px solid black;
     width: 18rem;
+    height: 25rem;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 0.3rem;
     text-align: center;
     padding: 2rem;
     z-index: -1;
@@ -22,9 +53,11 @@
     overflow: hidden;
 }
 
-#weather-condition{
+
+
+#weather-condition-icon{
     margin: 3rem;
-    height: 10rem;
+    height: 9rem;
     /* border: 1px solid red; */
 }
 
@@ -36,13 +69,18 @@
 }
 
 .info #date{
+    margin-bottom: 1rem;
     color: rgb(49, 49, 49);
     font-size: 0.rem;
 }
 
 .info #temp{
     font-family: 'Heebo', sans-serif;
-    padding: 1rem;
+    padding: 0.6rem;
     font-size: 2.5rem;
+}
+
+.info #condition{
+    text-transform: capitalize;
 }
 

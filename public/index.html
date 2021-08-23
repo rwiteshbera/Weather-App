@@ -10,21 +10,28 @@
     <title>Weather App</title>
 </head>
 <body>
-    <div class="box">
+    <div class="searchBox">
+        <form action="" onsubmit="searchLocation(event)">
+            <input id="text-area" type="text" name="name" placeholder="Search location">
+            <button id="search" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="box" id="box-bg">
         <div class="wave -one"></div>
         <div class="wave -two"></div>
         <div class="wave -three"></div>
-
-        <div id="weather-condition">
-            <img src="https://img.icons8.com/color/48/000000/smiling-sun.png"/>
+        
+     
+        <div id="weather-condition-icon">
+            <img id="currentStatus" src="./icons/kweather.png"/>
         </div>
         <div class="info">
-            <h2 id="location"></h2>
             <p id="date"></p>
+            <h2 id="location"></h2>
             <h1 id="temp"></h1>
+            <h2 id="condition"></h2>
         </div>
     </div>
     <script src="./js/script.js"></script>
-    <script src="./js/fetch_api.js"></script>
 </body>
 </html>

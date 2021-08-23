@@ -71,13 +71,13 @@ const sendData = (realData) => {
 };
 
 const getData = async () => {
-    const api = "http://api.openweathermap.org/data/2.5/weather?q=kolkata&appid=286b38672a6e470917475581312f0907";
+    const api = "https://api.openweathermap.org/data/2.5/weather?q=kolkata&appid=286b38672a6e470917475581312f0907";
     try {
        let data = await fetch(api); 
        realData = await data.json();
        sendData(realData);
     } catch (error) {
-        
+        console.log(error);
     }
 };
 

@@ -40,12 +40,9 @@
     font-size: 0.rem;
 }
 
-.info .temp{
+.info #temp{
     font-family: 'Heebo', sans-serif;
     padding: 1rem;
     font-size: 2.5rem;
 }
 
-.info .tempMinMax{
-    color: rgb(49, 49, 49);
-}
